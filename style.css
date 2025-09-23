@@ -1,0 +1,349 @@
+/*以下設定全域*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", "Noto Sans", sans-serif;
+}
+html{
+    font-size: 16px;
+}
+p{
+    margin: 0px;
+    font-weight: 300;
+}
+
+/*以下設定版面*/
+.body{
+    display: flex;
+    flex-direction: column;
+}
+.header{/*header底色*/
+    width: 100%;
+    height: 6.9rem;
+    background-color: #897149;
+    display: flex;
+    align-items: center;
+}
+.nav01{/*右上nav*/
+    display: flex;
+    gap: 14px;
+    margin-right: 3.25rem;
+    align-items: center;
+}
+.nav02-1{/*主要nav底色*/
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDA657;
+}
+.nav02-2{/*主要nav文字*/
+    display: flex;
+    align-items: center;
+}
+.nav03{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 9rem;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.article-top{/*校園新聞與影中有你*/
+    display: flex;
+    width: 81rem;
+    gap: 3.5%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.article-middle{/*訊息列表*/
+    display: flex;
+    flex-direction: column;
+    width: 81rem;
+    margin: 0 auto;
+}
+.article-bottom{
+    width: 100%;
+    height: 28.5rem;
+    background-color: #F3F0EB;
+    display: flex;
+    margin-top: 4.6rem;
+    padding: 4.18rem 3.75rem;
+    gap: 1%;
+    justify-content: center;
+}
+.article-lt{
+    display: flex;
+    flex-direction: column;
+    width: 46.5rem;
+}
+.article-rt{
+    display: flex;
+    flex-direction: column;
+    width: 31.75rem;
+}
+.article-m01{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.article-b01{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.article-b02{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    width: 100%;
+    height: 12.5rem;
+    background-color: #897149;
+    display: flex;
+    padding: 60px 81px;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 20px 20px 20px;
+    grid-auto-flow: column;
+    gap: 12px 40px;
+    margin: 0px;
+}
+.footer-all{
+    display: flex;
+    margin: 0 auto;
+}
+.title01{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 16px;
+    margin: 22px;
+}
+.title02{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 16px;
+}
+.link01{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 8px;
+    font-size: 18px;
+}
+.link02{
+    display: flex;
+    gap: 200px;
+    margin: 20px auto;
+    justify-content: center;
+}
+.news-box01{
+    width: 468px;
+    height: 170px;
+    border: 1px solid #D2CEC7;
+    padding: 28px 26px;
+}
+.news-box01:hover{
+    width: 468px;
+    height: 170px;
+    border: 1px solid #DDA657;
+    padding: 28px 26px;
+    color: #897149;
+}
+.news-box02{
+    display: flex;
+}
+.news-box03{
+    display: flex;
+}
+.news-box04{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.video-box{
+    display: flex;
+    width: 508px;
+    height: 362px;
+    border: 1px solid #D2CEC7;
+    padding: 29px 26px;
+    justify-content: center;
+    align-items: center;
+}
+.information01{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    white-space: nowrap;
+}
+.information02{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+/*以下設定線條*/
+.line01{/*淺冷灰長橫線*/
+    border-top: 1px solid #E2E2E2;
+    height: 0px;
+    width: 1326px;
+}
+.line02{/*淺款灰中橫線*/
+    border-top: 1px solid #D2CEC7;
+    height: 0px;
+    width: 322px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+.line03{
+    border-bottom: 2px solid #DDA657;
+    width: fit-content;
+    padding: 12px;
+}
+
+/*以下設定圖片*/
+.youtube{
+    width: 451px;
+    height: 281px;
+}
+.img01{/*左上校徽*/
+    width: 220px;
+    height: 90px;
+    margin: auto auto auto 52px;
+}
+.img02{/*搜尋*/
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+.img03{/*banner*/
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+.img04{/*小標icon*/
+    width: 36px;
+    height: 36px;
+}
+.img05{/*校園新聞照片*/
+    width: 306px;
+    height: 170px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.img07{/*影中有你箭頭*/
+    width: 23px;
+    height: 36px;
+    object-fit: cover;
+}
+.img08{
+    width: 42px;
+    height: auto;
+}
+.img09{
+    width: 76px;
+    height: 70px;
+    margin-right: 36px;
+}
+.img10{
+    width: 100px;
+    height: 35px;
+    margin-left: -100px;
+}
+/*以下設定文字*/
+.font01{
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.font01:hover{
+    font-size: 1rem;
+    color: #FFFFFF;
+    border-bottom: 1px solid #DDA657;
+    padding: 0.5em 0;
+}
+.font02{/*小粗體字*/
+    font-size: 1.25rem;
+    font-weight: 500;
+    background-color: #DDA657;
+    padding: 1.3rem 1.3rem;
+}
+.font02:hover{/*小粗體字*/
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #897149;
+    background-color: #ffffff;
+    padding: 1.3rem 1.3rem;
+}
+.font03{/*大粗體字*/
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+.font04{
+    font-size: 1.125rem;
+    letter-spacing: 4%;
+}
+.font05{
+    font-size: 1.125rem;
+    letter-spacing: 4%;
+    color: #897149;
+    margin-bottom: 4px;
+}
+.font06{
+    display: flex;
+    font-size: 1rem;
+    margin-top: 12px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.font07{
+    margin-top: 16px;
+}
+.font08{
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    letter-spacing: 4%;
+    background-color: #586A88;
+    display: inline;
+    padding: 3px 15px;
+    border-radius: 16px;
+}
+.font09{
+    display: flex;
+    font-size: 1rem;
+    margin-top: 44px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.font10{
+    font-size: 1rem;
+    color: #FFFFFF;
+    letter-spacing: 4%;
+}
+.font11 p{
+    font-size: 1.125rem;
+    letter-spacing: 4%;
+}
+.font11 p:hover{
+    font-size: 1.125rem;
+    letter-spacing: 4%;
+    color: #586A88;
+}
+.font12 p{
+    font-size: 1.125rem;
+    letter-spacing: 4%;
+}
+.font12 p:hover{
+    font-size: 1.125rem;
+    letter-spacing: 4%;
+    color: #897149;
+}
+/*以下設定色塊*/
