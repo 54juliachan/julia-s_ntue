@@ -150,3 +150,7 @@ search.addEventListener("click", function () {
     }, 400);
   }
 });
+
+fetch('https://api.countapi.xyz/hit/yourdomain.com/visits')
+  .then(res => res.json())
+  .then(data => document.getElementById('count').textContent = data.value);
