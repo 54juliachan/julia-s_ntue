@@ -151,6 +151,7 @@ search.addEventListener("click", function () {
   }
 });
 
-fetch('https://api.countapi.xyz/hit/yourdomain.com/visits')
+fetch('https://api.countapi.xyz/hit/juliasntue/visits')
   .then(res => res.json())
   .then(data => document.getElementById('count').textContent = data.value);
+
