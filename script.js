@@ -151,8 +151,25 @@ search.addEventListener("click", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  fetch('https://api.countapi.xyz/hit/julia-s-ntue.vercel.app/visits')
+    .then(res => res.json())
+    .then(data => {
+      const el = document.getElementById('count');
+      if (el) {
+        el.textContent = data.value;
+      } else {
+        console.error('找不到 #count 元素');
+      }
+    })
+    .catch(err => {
+      console.error('CountAPI 請求錯誤：', err);
+    });
+});
+
 fetch('https://api.countapi.xyz/hit/julia-s-ntue.vercel.app/visits')
   .then(res => res.json())
   .then(data => document.getElementById('count').textContent = data.value);
+
 
 
