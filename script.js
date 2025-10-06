@@ -166,10 +166,3 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error('CountAPI 請求錯誤：', err);
     });
 });
-
-fetch('https://api.countapi.xyz/hit/julia-s-ntue.vercel.app/visits')
-  .then(res => res.json())
-  .then(data => document.getElementById('count').textContent = data.value);
-
-
-
