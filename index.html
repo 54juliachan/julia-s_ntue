@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <title>國立台北教育大學</title>
 </head>
 <body class="body">
@@ -24,10 +25,10 @@
             <p class="font01">校友</p>
             <p class="font01">教職員工</p>
             <p class="font01">English</p>
-            <label for="search-toggle">
-                <img class="img02" src="img\icon_search.png" alt="搜尋">
+            <div for="search">
+                <button class="bt01"><img class="img02" src="img\icon_search.png" alt="搜尋"></button>
                 <input class="text-box" type="text" placeholder="關鍵字">
-            </label>
+            </div>
         </div>
     </header>
     <nav class="nav02-1">
@@ -64,7 +65,20 @@
         </ul>
     </nav>
     <article>
-        <img class="img03" src="img\banner_01.jpg" alt="大橫幅">
+        <div class="banner">
+            <div class="slides01">
+                <img class="img03" src="img\banner_01.jpg" alt="大橫幅01">
+                <img class="img03" src="img\banner_02.jpg" alt="大橫幅02">
+                <img class="img03" src="img\banner_03.png" alt="大橫幅03">
+                <img class="img03" src="img\banner_04.jpg" alt="大橫幅04">
+                <img class="img03" src="img\banner_05.jpg" alt="大橫幅05">
+                <img class="img03" src="img\banner_01.jpg" alt="重播大橫幅01">
+            </div>
+            <div>
+                <img class="img07 arrow03" src="img\icon_arrowl_white.png" alt="白色箭頭向左">
+                <img class="img07 arrow04" src="img\icon_arrowr_white.png" alt="白色箭頭向右">
+            </div>
+        </div>
         <section class="article-top">
             <section class="article-lt">
                 <div class="title01">
@@ -101,28 +115,55 @@
                     <h2 class="font03">影中有你</h2>
                 </div>
                 <div class="video-box">
-                    <img class="img07" src="img\icon_arrowl.png" alt="向左箭頭">
-                    <div>
-                        <iframe class="youtube" src="https://www.youtube.com/embed/AZORgk8XbxY?si=H9S13TJnzsV9Accd" 
-                        title="國北校園介紹影片" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <p class="font07">國立台北教育大學-學校簡介中文版(2024)</p>
+                    <img class="img07 arrow01" src="img\icon_arrowl.png" alt="向左箭頭">
+                    <div class="video">
+                        <div class="slides02">
+                            <div>
+                                <iframe class="youtube" src="https://www.youtube.com/embed/AZORgk8XbxY?si=H9S13TJnzsV9Accd" 
+                                title="129th校慶校長致詞" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="font07">國立臺北教育大學129週年校慶 陳慶和校長致詞</p>
+                            </div>
+                            <div>
+                                <iframe class="youtube" src="https://www.youtube.com/embed/87pBBCx87J8?si=Quw9cojWZh-IkMAx" 
+                                title="國際論壇校長致詞" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="font07">2024 SEE Learning國際論壇與實踐分享會 陳慶和校長全英語致詞歡迎國內外嘉賓</p>
+                            </div>
+                            <div>
+                                <iframe class="youtube" src="https://www.youtube.com/embed/I-r45BvFT-Q?si=0eXUlqGX84nTxwDY"
+                                title="國際和平中心揭牌" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="font07">國立臺北教育大學國際和平中心揭牌啟用典禮 陳慶和校長致詞</p>
+                            </div>
+                            <div>
+                                <iframe class="youtube" src="https://www.youtube.com/embed/AZORgk8XbxY?si=H9S13TJnzsV9Accd" 
+                                title="129th校慶校長致詞" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <p class="font07">國立臺北教育大學129週年校慶 陳慶和校長致詞</p>
+                            </div>
+                        </div>
                     </div>
-                    <img class="img07" src="img\icon_arrowr.png" alt="向右箭頭">
+                    
+                    
+                    <img class="img07 arrow02" src="img\icon_arrowr.png" alt="向右箭頭">
                 </div>
                 <p class="font06">更多影中有你</p>
             </section>
         </section>
-        <section class="article-middle">
+        <section class="article-middle list01">
             <nav>
                 <ul class="font03 nav03" type="none">
-                    <li class="line03">一般</li>
-                    <li class="line03">招生</li>
-                    <li class="line03">緊急</li>
-                    <li class="line03">徵才</li>
-                    <li class="line03">研討會</li>
-                    <li class="line03">活動訊息</li>
+                    <li class="block01 info01">一般</li>
+                    <li class="line03 info02">招生</li>
+                    <li class="line03 info03">緊急</li>
+                    <li class="line03 info04">徵才</li>
+                    <li class="line03 info05">研討會</li>
+                    <li class="line03 info06">活動訊息</li>
                 </ul>
             </nav>
             <div class="article-m01">
@@ -167,6 +208,126 @@
                 </div>
             </div>
             <p class="font06">更多一般訊息</p>
+        </section>
+        <section class="article-middle list02">
+            <nav>
+                <ul class="font03 nav03" type="none">
+                    <li class="line03 info01">一般</li>
+                    <li class="block01 info02">招生</li>
+                    <li class="line03 info03">緊急</li>
+                    <li class="line03 info04">徵才</li>
+                    <li class="line03 info05">研討會</li>
+                    <li class="line03 info06">活動訊息</li>
+                </ul>
+            </nav>
+            <div class="article-m01">
+                <div class="information02 font11">
+                    <a href="https://www.ntue.edu.tw/p/406-1000-46527,r493.php?Lang=zh-tw">
+                        <div class="information01">
+                            <p class="font08">2025-08-29</p><p>/</p>
+                            <p>【公告】本校115學年度碩、博士班甄試入學招生簡章</p>
+                        </div>
+                    </a>
+                    
+                    <div class="line01"></div>
+                    <a href="https://www.ntue.edu.tw/p/406-1000-46214,r493.php?Lang=zh-tw">
+                        <div class="information01">
+                            <p class="font08">2025-08-13</p><p>/</p>
+                            <p>【公告】本校114學年度大學分發入學不另寄發錄取通知，錄取生請至本校網頁「新生專區」查閱註冊須知</p>
+                        </div>
+                    </a>
+                    <div class="line01"></div>
+                    <a href="https://www.ntue.edu.tw/p/406-1000-46076,r493.php?Lang=zh-tw">
+                        <div class="information01">
+                            <p class="font08">2025-08-16</p><p>/</p>
+                            <p>【公告】本校開設「勞動部勞動力發展署114年產業新尖兵計畫-永續與綠能科技應⽤⼈才養成班(第1梯次)」課程簡章</p>
+                        </div>
+                    </a>
+                    <div class="line01"></div>
+                    <a href="https://www.ntue.edu.tw/p/406-1000-46076,r493.php?Lang=zh-tw">
+                        <div class="information01">
+                            <p class="font08">2025-06-12</p><p>/</p>
+                            <p>【公告】本校114學年度大學申請入學統一分發錄取名單</p>
+                        </div>
+                    </a>
+                    <div class="line01"></div>
+                    <a href="https://www.ntue.edu.tw/p/406-1000-44493,r493.php?Lang=zh-tw">
+                        <div class="information01">
+                            <p class="font08">2025-06-02</p><p>/</p>
+                            <p>本校114學年度(第1期)辦理「幼兒園園長專業訓練班」，招生簡章公告</p>
+                        </div>
+                    </a>
+                    <div class="line01"></div>
+                    <a href="https://www.ntue.edu.tw/p/406-1000-44488,r493.php?Lang=zh-tw">
+                        <div class="information01">
+                            <p class="font08">2025-06-02</p><p>/</p>
+                            <p>114-1國北教大「學士學分班與碩士學分班」招生訊息，共計109門課開放申請中，歡迎各界有志學習者報名選讀。 (114年9月3日止)。</p>
+                        </div>
+                    </a>
+                    <div class="line01"></div>
+                </div>
+            </div>
+            <p class="font06">更多招生訊息</p>
+        </section>
+        <section class="article-middle list03">
+            <nav>
+                <ul class="font03 nav03" type="none">
+                    <li class="line03 info01">一般</li>
+                    <li class="line03 info02">招生</li>
+                    <li class="block01 info03">緊急</li>
+                    <li class="line03 info04">徵才</li>
+                    <li class="line03 info05">研討會</li>
+                    <li class="line03 info06">活動訊息</li>
+                </ul>
+            </nav>
+            <div class="article-m01">
+                <div class="information02 font11">
+                    <a href="https://www.ntue.edu.tw/p/406-1000-46527,r493.php?Lang=zh-tw">
+                        <div class="information01">
+                            <p class="font08">2025-08-28</p><p>/</p>
+                            <p>【公告】114年度本校辦理教育部學海築夢及新南向學海築夢校內甄選簡章。欲申請者，請於114年9月1日(一)下午3時前提出申請。</p>
+                        </div>
+                    </a>
+                    
+                    <div class="line01"></div>
+                    <a href="https://www.ntue.edu.tw/p/406-1000-46214,r493.php?Lang=zh-tw">
+                        <div class="information01">
+                            <p class="font08">2025-08-28</p><p>/</p>
+                            <p>【公告】本校114年度第二次「學海惜珠」校內甄選簡章，開放申請！</p>
+                        </div>
+                    </a>
+                    <div class="line01"></div>
+                    <a href="https://www.ntue.edu.tw/p/406-1000-46076,r493.php?Lang=zh-tw">
+                        <div class="information01">
+                            <p class="font08">2025-08-21</p><p>/</p>
+                            <p>「有關社群平台疑似有教練不當發言情事」澄清公告-永續與綠能科技應⽤⼈才養成班(第1梯次)」課程簡章</p>
+                        </div>
+                    </a>
+                    <div class="line01"></div>
+                    <a href="https://www.ntue.edu.tw/p/406-1000-46076,r493.php?Lang=zh-tw">
+                        <div class="information01">
+                            <p class="font08">2025-08-21</p><p>/</p>
+                            <p>「有關社群平台疑似有學生霸凌情事」澄清公告</p>
+                        </div>
+                    </a>
+                    <div class="line01"></div>
+                    <a href="https://www.ntue.edu.tw/p/406-1000-44493,r493.php?Lang=zh-tw">
+                        <div class="information01">
+                            <p class="font08">2025-07-21</p><p>/</p>
+                            <p>07/25(五) 09:00 ~ 18:00 藝術館網路服務中斷通知</p>
+                        </div>
+                    </a>
+                    <div class="line01"></div>
+                    <a href="https://www.ntue.edu.tw/p/406-1000-44488,r493.php?Lang=zh-tw">
+                        <div class="information01">
+                            <p class="font08">2025-06-10</p><p>/</p>
+                            <p>【消息更正】有關114-1學伴面試詳細訊息，延至114.6.10下午五時另行公告 (114年9月3日止)。</p>
+                        </div>
+                    </a>
+                    <div class="line01"></div>
+                </div>
+            </div>
+            <p class="font06">更多緊急訊息</p>
         </section>
         <section class="article-bottom font04">
             <section class="article-b02">
@@ -272,7 +433,7 @@
         <img class="img10" src="img\800039144.png" alt="無障礙標章">
         </div>
     </footer>
-    
 </div>
+<script src="script.js"></script>
 </body>
 </html>
