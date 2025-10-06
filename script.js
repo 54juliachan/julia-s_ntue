@@ -151,7 +151,8 @@ search.addEventListener("click", function () {
   }
 });
 
-fetch('https://api.countapi.xyz/hit/juliasntue/visits')
+fetch('https://api.countapi.xyz/hit/julia-s-ntue.vercel.app/visits')
   .then(res => res.json())
   .then(data => document.getElementById('count').textContent = data.value);
+
 
